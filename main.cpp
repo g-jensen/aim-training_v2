@@ -25,7 +25,7 @@ int main () {
     Aim::Button restartButton(100,35,10,130);
 
     sf::Font mainFont;
-    if (!mainFont.loadFromFile("./assets/DejaVuSans-Bold.ttf")) {
+    if (!mainFont.loadFromFile("./assets/fonts/DejaVuSans-Bold.ttf")) {
         std::cout << "Error loading font" << std::endl;
     }
 
