@@ -1,19 +1,30 @@
 #include <SFML/Graphics.hpp>
 #include "Button.hpp"
 
+#ifndef GAME_H
+#define GAME_H
+
 namespace Aim {
     class Game {
         
 
         public:
-            class GameBlocks;
+            class AimBlocksHandler;
             class AimBlocks;
             bool hasStarted;
             float timeLimit;
+            float hits;
+            float misses;
+            float ratio;
+            bool gotHit;
 
             Game() {
                 hasStarted = false;
                 timeLimit = 30.01f;
+                hits = 0;
+                misses = 0;
+                ratio = 0;
+                gotHit = false;
             }
             
         private:
@@ -32,7 +43,7 @@ namespace Aim {
             }
     };
 
-    class Game::GameBlocks {
+    class Game::AimBlocksHandler {
         private:
             int currentPos = 0;
             int initialBlockCnt = 3;
@@ -85,7 +96,7 @@ namespace Aim {
                 return false;
             }
 
-            GameBlocks () {
+            AimBlocksHandler () {
                 unsigned seed = time(0);
                 srand(seed);
                 initPossiblePositions();
@@ -93,3 +104,5 @@ namespace Aim {
             }
     };
 }
+
+#endif

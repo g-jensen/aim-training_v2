@@ -1,5 +1,8 @@
 #include <SFML/Graphics.hpp>
 
+#ifndef BUTTON_H
+#define BUTTON_H
+
 namespace Aim {
 
     class Button {
@@ -96,3 +99,5 @@ namespace Aim {
     };
 
 }
+
+#endif
