@@ -4,7 +4,7 @@
 #define TEXT_H
 
     namespace Aim {
-        class Text : hasTexture {
+        class Text {
             private:
                 sf::Font t_font;
                 std::string t_string;
