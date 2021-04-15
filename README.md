@@ -1,5 +1,6 @@
 # aim-training_v2
 # aim-training is a game that gives you 30 seconds to click as many rectangles as possibe.
+# [example video](https://www.youtube.com/watch?v=rjJxVvve58c)
 A refactor of aim-training_v1
 
 SFML is a graphics library for C++
